@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CACE4"
+    tools:context=".ArgentinaActivity">
+
+    <TextView
+        android:id="@+id/tituloArgentina"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Argentina!"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textColor="#7D4016"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mapaArgentina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tituloArgentina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Imágen del mapa -->
+
+        <ImageView
+            android:id="@+id/Argentina"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/argentina"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+        <ImageButton
+            android:id="@+id/cataratasB"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            app:srcCompat="@mipmap/cataratas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="70dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa principal"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#7D4016"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="660dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TenochFragment">
+
+    <TextView
+        android:id="@+id/tituloTeotihuacan"
+        android:layout_width="0dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Teotihuacán!"
+        android:textStyle="bold"
+        android:background="#62280E"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaTeotihuacan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Teotihuacán fue una gran metrópoli prehispánica, centro cultural de Mesoamérica entre los siglos I y VII d.C., famosa por su diseño urbano ortogonal y monumentos como las Pirámides del Sol y la Luna, así como el Templo de Quetzalcóatl. Su nombre en náhuatl significa lugar donde fueron hechos los dioses y fue un importante centro de poder político, económico y religioso, con una sociedad multiétnica y una amplia influencia cultural. Es Patrimonio de la Humanidad desde 1987. "
+        app:layout_constraintTop_toBottomOf="@id/tituloTeotihuacan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoTeotihuacan"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaTeotihuacan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de México"
+        android:backgroundTint="#62280E"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/videoTeotihuacan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

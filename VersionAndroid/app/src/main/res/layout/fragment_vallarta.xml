@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".VallartaFragment"
+    android:background="#8BB7C8">
+
+
+    <TextView
+        android:id="@+id/tituloVallarta"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Puerto Vallarta!"
+        android:textStyle="bold"
+        android:background="#070707"
+        android:textColor="#8BB7C8"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaVallarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Es la segunda zona económica más importante del estado de Jalisco y el tercer puerto más importante de México. Actualmente, es uno de los lugares más visitados del país. El nombre de Puerto Vallarta, es en honor del Lic. Ignacio Luis Vallarta, jurisconsulto jalisciense y ex gobernador del estado."
+        app:layout_constraintTop_toBottomOf="@id/tituloVallarta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoVallarta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaVallarta"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonVall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de México"
+        android:backgroundTint="#070707"
+        android:textColor="#8BB7C8"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/videoVallarta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

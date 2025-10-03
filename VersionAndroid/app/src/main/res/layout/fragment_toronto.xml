@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".torontoFragment"
+    android:background="#E6D6B9">
+
+
+    <TextView
+        android:id="@+id/tituloToronto"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Toronto!"
+        android:textStyle="bold"
+        android:background="#623802"
+        android:textColor="#E6D6B9"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaToronto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Toronto es la ciudad más grande de Canadá y capital de la provincia de Ontario, reconocida mundialmente por su economía, finanzas, tecnología y entretenimiento, así como por su carácter multicultural, con más de 200 orígenes étnicos y 140 idiomas. Ubicada a orillas del lago Ontario, destaca por el centro financiero y comercial, el Entertainment District, la icónica Torre CN, y una vibrante escena cultural con barrios étnicos como Chinatown, Little Italy y el barrio griego. "
+        app:layout_constraintTop_toBottomOf="@id/tituloToronto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoToronto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaToronto"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonToronto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de Canadá"
+        android:backgroundTint="#623802"
+        android:textColor="#E6D6B9"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/videoToronto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

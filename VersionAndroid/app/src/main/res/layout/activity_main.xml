@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2FAF1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tituloTarea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Selecciona el país de tu interés y conócelo!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#4CCA54"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Contenedor de imágen y botones -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tituloTarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Imágen del mapa -->
+
+        <!-- Botón sobre México -->
+
+        <ImageView
+            android:id="@+id/America"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/america"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/Mexico"
+            android:layout_width="90dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Alaska"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Groenlandia"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Canada"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/EUA"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Brasil"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="360dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Argentina"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="440dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Venezuela"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="340dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Colombia"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Peru"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="370dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text=". "
+            android:textSize="0dp"
+            android:textColor="#FF5722"
+            android:translationZ="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

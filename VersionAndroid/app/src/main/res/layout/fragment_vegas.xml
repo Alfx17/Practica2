@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vegasFragment"
+    android:background="#000000">
+
+
+    <TextView
+        android:id="@+id/tituloVegas"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Las Vegas!"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaVegas"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Las Vegas es una ciudad en Nevada, conocida como la Capital Mundial del Entretenimiento, famosa por sus lujosos casinos, hoteles temáticos, espectáculos, restaurantes y centros comerciales en The Strip. Fundada en 1905, creció gracias a la legalización del juego en 1931 y la construcción de grandes complejos hoteleros. Atrae a millones de turistas anualmente para la recreación, el juego y los eventos deportivos, convirtiéndose en un destino turístico de primer nivel y un centro de convenciones a nivel mundial."
+        app:layout_constraintTop_toBottomOf="@id/tituloVegas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoVegas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaVegas"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonVegas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de EUA"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/videoVegas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

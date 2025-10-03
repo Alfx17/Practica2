@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ilulissatFragment"
+    android:background="#8BB7C8">
+
+
+    <TextView
+        android:id="@+id/tituloIlulissat"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Ilulissat!"
+        android:textStyle="bold"
+        android:background="#070707"
+        android:textColor="#8BB7C8"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaIlulissat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Ilulissat es una ciudad groenlandesa conocida como La Ciudad de los Icebergs y es el destino turístico más popular del país, principalmente por su cercanía al Fiordo de Hielo de Ilulissat, declarado Patrimonio de la Humanidad por la UNESCO. Esta ciudad ofrece paisajes espectaculares, la oportunidad de presenciar desprendimientos masivos de hielo y conocer la cultura Inuit y el uso tradicional de los trineos tirados por perros."
+        app:layout_constraintTop_toBottomOf="@id/tituloIlulissat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoIlulissat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaIlulissat"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonIlulissat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de Groenlandia"
+        android:backgroundTint="#070707"
+        android:textColor="#8BB7C8"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/videoIlulissat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".niagaraFragment"
+    android:background="#8BB7C8">
+
+
+    <TextView
+        android:id="@+id/tituloNiagara"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a las Cataratas Del Niagara!"
+        android:textStyle="bold"
+        android:background="#070707"
+        android:textColor="#8BB7C8"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaNiagara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Las Cataratas del Niágara son un conjunto de tres cascadas —la Americana, la Velo de Novia y la de la Herradura— ubicadas en el río Niágara, en la frontera entre Estados Unidos (Nueva York) y Canadá (Ontario). Formadas hace miles de años por el deshielo de la última glaciación, son una maravilla natural famosa por su imponente volumen de agua y un importante centro turístico. Se puede disfrutar de ellas desde miradores, cruceros como el Maid of the Mist, y espectáculos de luz nocturnos. "
+        app:layout_constraintTop_toBottomOf="@id/tituloNiagara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoNiagara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaNiagara"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNiagara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de Canadá"
+        android:backgroundTint="#070707"
+        android:textColor="#8BB7C8"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/videoNiagara"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

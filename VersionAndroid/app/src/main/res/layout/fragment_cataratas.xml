@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".cataratasFragment"
+    android:background="#F8E5B2">
+
+
+    <TextView
+        android:id="@+id/tituloCataratas"
+        android:textSize="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Las Cataratas del Iguazú!"
+        android:textStyle="bold"
+        android:background="#6892A0"
+        android:textColor="#F8E5B2"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReseñaCataratas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Las Cataratas del Iguazú son un impresionante conjunto de más de 275 cascadas que se encuentran en la frontera entre Argentina y Brasil, sobre el río Iguazú. Destaca la majestuosa Garganta del Diablo, un cañón de 80 metros de profundidad por el que se precipita gran parte del agua. Este sistema de cataratas, de origen volcánico y rodeado por la selva subtropical, fue declarado Patrimonio de la Humanidad por la UNESCO y es considerado una de las Siete Maravillas Naturales del mundo."
+        app:layout_constraintTop_toBottomOf="@id/tituloCataratas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <WebView
+        android:id="@+id/videoCataratas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReseñaCataratas"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCataratas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Regresar al mapa de Argentina"
+        android:backgroundTint="#6892A0"
+        android:textColor="#F8E5B2"
+        app:cornerRadius="12dp"
+        android:elevation="8dp"
+        app:rippleColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/videoCataratas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
