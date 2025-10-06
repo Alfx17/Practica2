@@ -72,30 +72,30 @@
   </tr>
   <tr>
     <th>
-      <img src="fondo/themes0.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes0.jpg" alt="Prueba" width="300" />
     </th>
     <th>
-      <img src="fondo/themes2.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes2.jpg" alt="Prueba" width="300" />
     </th>
     <th>
-      <img src="fondo/themes4.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes4.jpg" alt="Prueba" width="300" />
     </th>
     <th>
-      <img src="fondo/themes7.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes7.jpg" alt="Prueba" width="300" />
     </th>
   </tr>
   <tr>
     <th>
-      <img src="fondo/themes1.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes1.jpg" alt="Prueba" width="300" />
     </th>
     <th>
-      <img src="fondo/themes3.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes3.jpg" alt="Prueba" width="300" />
     </th>
     <th>
-      <img src="fondo/themes5.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes5.jpg" alt="Prueba" width="300" />
     </th>
     <th>
-      <img src="fondo/themes6.jpeg" alt="Prueba" width="300" />
+      <img src="fondo/themes6.jpg" alt="Prueba" width="300" />
     </th>
   </tr>
 </table>
@@ -104,7 +104,7 @@
 
 ## Descripción de cómo se implementó la funcionalidad de cambio de tema.
 
-<p align="center">La implementación realizada consiste en un sistema para alternar entre el modo claro y el modo oscuro dentro de una aplicación Android, aprovechando el uso de SharedPreferences para mantener el estado del tema incluso después de cerrar la aplicación. Se empieza obteniendo una referencia al archivo de preferencias, desde donde se consulta un valor booleano que indica si el modo nocturno está activado o no. En función de ese valor, antes de crear la interfaz de usuario, se configura el tema global de la aplicación utilizando la clase AppCompatDelegate, la cual permite aplicar el modo claro o el modo oscuro de forma consistente en todas las actividades.
+<p align="justify">La implementación realizada consiste en un sistema para alternar entre el modo claro y el modo oscuro dentro de una aplicación Android, aprovechando el uso de SharedPreferences para mantener el estado del tema incluso después de cerrar la aplicación. Se empieza obteniendo una referencia al archivo de preferencias, desde donde se consulta un valor booleano que indica si el modo nocturno está activado o no. En función de ese valor, antes de crear la interfaz de usuario, se configura el tema global de la aplicación utilizando la clase AppCompatDelegate, la cual permite aplicar el modo claro o el modo oscuro de forma consistente en todas las actividades.
 
 Después de establecer el tema, se infla el layout principal y se utiliza el botón responsable de cambiar el tema. Este botón cambia su ícono dependiendo del modo actual: si la aplicación se encuentra en modo oscuro, se muestra un ícono de sol que indica la posibilidad de volver al modo claro, mientras que si el tema activo es el claro, se muestra un ícono de luna que representa la opción de activar el modo oscuro.
 
@@ -136,12 +136,8 @@ Cuando el usuario presiona el botón, se vuelve a consultar el estado almacenado
 
 ## Presentación de la aplicación 
 
--Aplicación inicial
 https://github.com/user-attachments/assets/77734344-893d-4594-b24c-dd554714be43
--Aplicación usando Themes
 https://github.com/user-attachments/assets/397df654-3046-4811-aed0-a5de56668449
-
-
 
 ---
 
