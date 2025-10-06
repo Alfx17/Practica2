@@ -12,6 +12,7 @@ import android.content.SharedPreferences
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
+import android.view.View
 
 
 class MainActivity : AppCompatActivity() {
@@ -61,62 +62,181 @@ class MainActivity : AppCompatActivity() {
         //Botón para Alaska
         val alaskaB = findViewById<Button>(R.id.Alaska)
         alaskaB.setOnClickListener {
-            val intent = Intent(this, AlaskaActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, AlaskaActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Groenlandia
+
+//Botón para Groenlandia
         val groenlandiaB = findViewById<Button>(R.id.Groenlandia)
         groenlandiaB.setOnClickListener {
-            val intent = Intent(this, GroenlandiaActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, GroenlandiaActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Canada
+
+//Botón para Canada
         val canadaB = findViewById<Button>(R.id.Canada)
         canadaB.setOnClickListener {
-            val intent = Intent(this, CanadaActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, CanadaActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para EUA
+
+//Botón para EUA
         val EUAB = findViewById<Button>(R.id.EUA)
         EUAB.setOnClickListener {
-            val intent = Intent(this, EUAActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, EUAActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para México
+
+//Botón para México
         val mexicoB = findViewById<Button>(R.id.Mexico)
         mexicoB.setOnClickListener {
-            val intent = Intent(this, MexicoActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, MexicoActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Venezuela
+
+//Botón para Venezuela
         val venezuelaB = findViewById<Button>(R.id.Venezuela)
         venezuelaB.setOnClickListener {
-            val intent = Intent(this, VenezuelaActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, VenezuelaActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Colombia
+
+//Botón para Colombia
         val colombiaB = findViewById<Button>(R.id.Colombia)
         colombiaB.setOnClickListener {
-            val intent = Intent(this, ColombiaActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, ColombiaActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Perú
+
+//Botón para Perú
         val peruB = findViewById<Button>(R.id.Peru)
         peruB.setOnClickListener {
-            val intent = Intent(this, PeruActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, PeruActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Brasil
+
+//Botón para Brasil
         val brasilB = findViewById<Button>(R.id.Brasil)
         brasilB.setOnClickListener {
-            val intent = Intent(this, BrasilActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, BrasilActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
-        //Botón para Argentina
+
+//Botón para Argentina
         val argentinaB = findViewById<Button>(R.id.Argentina)
         argentinaB.setOnClickListener {
-            val intent = Intent(this, ArgentinaActivity::class.java)
-            startActivity(intent)
+            val rootView = findViewById<View>(android.R.id.content)
+            rootView.animate()
+                .scaleX(2.2f)
+                .scaleY(2.2f)
+                .setDuration(400)
+                .setInterpolator(android.view.animation.AccelerateInterpolator())
+                .withEndAction {
+                    val intent = Intent(this, ArgentinaActivity::class.java)
+                    startActivity(intent)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    rootView.scaleX = 1f
+                    rootView.scaleY = 1f
+                }
         }
 
 
