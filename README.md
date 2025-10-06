@@ -10,11 +10,13 @@
 ---
 
 ## Índice
-- [Título](#tarea-2--diseño-de-una-aventura-interactiva)
+- [Título](#practica-2--aplicacion-movil-basica)
 - [Insignias](#insignias)
 - [Índice](#índice)
 - [Objetivo](#objetivo)
 - [Descripción del proyecto](#descripción-del-proyecto)
+- [Implementación de Temas con SharedPreferences](#implementación-de-Temas-con-SharedPreferences)
+- [Descripción de cómo se implementó la funcionalidad de cambio de tema](#descripción-de-como-se-implementó-la-funcionalidad-de-cambio-de-tema)
 - [Ejemplo de Uso](#ejemplo-de-uso)
 - [Presentación de la aplicación](#presentación-de-la-aplicación)
 - [Estado de la tarea](#estado-de-la-tarea)
@@ -102,12 +104,10 @@
 
 ---
 
-## Descripción de cómo se implementó la funcionalidad de cambio de tema.
+## Descripción de cómo se implementó la funcionalidad de cambio de tema
 
-<p align="justify">La implementación realizada consiste en un sistema para alternar entre el modo claro y el modo oscuro dentro de una aplicación Android, aprovechando el uso de SharedPreferences para mantener el estado del tema incluso después de cerrar la aplicación. Se empieza obteniendo una referencia al archivo de preferencias, desde donde se consulta un valor booleano que indica si el modo nocturno está activado o no. En función de ese valor, antes de crear la interfaz de usuario, se configura el tema global de la aplicación utilizando la clase AppCompatDelegate, la cual permite aplicar el modo claro o el modo oscuro de forma consistente en todas las actividades.
-
+<p align="justify">La implementación realizada consiste en un sistema para alternar entre el modo claro y el modo oscuro dentro de una aplicación Android, aprovechando el uso de SharedPreferences para mantener el estado del tema incluso después de cerrar la aplicación. Se empieza obteniendo una referencia al archivo de preferencias, desde donde se consulta un valor booleano que indica si el modo nocturno está activado o no. En función de ese valor, antes de crear la interfaz de usuario, se configura el tema global de la aplicación utilizando la clase AppCompatDelegate, la cual permite aplicar el modo claro o el modo oscuro de forma consistente en todas las actividades. 
 Después de establecer el tema, se infla el layout principal y se utiliza el botón responsable de cambiar el tema. Este botón cambia su ícono dependiendo del modo actual: si la aplicación se encuentra en modo oscuro, se muestra un ícono de sol que indica la posibilidad de volver al modo claro, mientras que si el tema activo es el claro, se muestra un ícono de luna que representa la opción de activar el modo oscuro.
-
 Cuando el usuario presiona el botón, se vuelve a consultar el estado almacenado en las preferencias para determinar qué acción ejecutar. Si el modo oscuro está habilitado, la aplicación cambia a modo claro mediante la función de AppCompatDelegate y actualiza el ícono para reflejar el nuevo estado. En caso contrario, se activa el modo oscuro, se cambia el ícono nuevamente y se modifica el valor guardado en SharedPreferences para que el cambio persista. Finalmente, el editor de preferencias aplica los cambios, asegurando que la próxima vez que se abra la aplicación, esta recuerde el último tema seleccionado y lo aplique automáticamente antes de cargar la interfaz. </p>
 
 ---
@@ -116,6 +116,7 @@ Cuando el usuario presiona el botón, se vuelve a consultar el estado almacenado
   <tr>
     <th>Elección del país a visitar</th>
     <th>Elección del lugar visitar</th>
+    <th>Resúmen del lugar</th>
     <th>Resúmen del lugar</th>
   </tr>
   <tr>
@@ -136,7 +137,6 @@ Cuando el usuario presiona el botón, se vuelve a consultar el estado almacenado
 
 ## Presentación de la aplicación 
 
-https://github.com/user-attachments/assets/77734344-893d-4594-b24c-dd554714be43
 https://github.com/user-attachments/assets/397df654-3046-4811-aed0-a5de56668449
 
 ---
@@ -153,7 +153,8 @@ https://github.com/user-attachments/assets/397df654-3046-4811-aed0-a5de56668449
 - [x] Los botones de la pantalla de inicio me dirigen a otro Activity
 - [x] Cada país tiene un Activity diferente
 - [x] Los botones de cada país me dirigen a otro Activity
-- [x] En le Activity del lugar turístico se carga el Fragment correspondiente   
+- [x] En le Activity del lugar turístico se carga el Fragment correspondiente
+- [x] Uso de Themes para el modo claro y modo oscuro
 
 ---
 
