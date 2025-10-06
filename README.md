@@ -62,6 +62,55 @@
 </p>
 
 ---
+
+## Implementación de Temas con SharedPreferences
+<table>
+  <tr>
+    <th>Elección del país a visitar</th>
+    <th>Elección del lugar visitar</th>
+    <th>Resúmen del lugar</th>
+  </tr>
+  <tr>
+    <th>
+      <img src="fondo/themes0.jpeg" alt="Prueba" width="300" />
+    </th>
+    <th>
+      <img src="fondo/themes2.jpeg" alt="Prueba" width="300" />
+    </th>
+    <th>
+      <img src="fondo/themes4.jpeg" alt="Prueba" width="300" />
+    </th>
+    <th>
+      <img src="fondo/themes7.jpeg" alt="Prueba" width="300" />
+    </th>
+  </tr>
+  <tr>
+    <th>
+      <img src="fondo/themes1.jpeg" alt="Prueba" width="300" />
+    </th>
+    <th>
+      <img src="fondo/themes3.jpeg" alt="Prueba" width="300" />
+    </th>
+    <th>
+      <img src="fondo/themes5.jpeg" alt="Prueba" width="300" />
+    </th>
+    <th>
+      <img src="fondo/themes6.jpeg" alt="Prueba" width="300" />
+    </th>
+  </tr>
+</table>
+
+---
+
+## Descripción de cómo se implementó la funcionalidad de cambio de tema.
+
+<p align="center">La implementación realizada consiste en un sistema para alternar entre el modo claro y el modo oscuro dentro de una aplicación Android, aprovechando el uso de SharedPreferences para mantener el estado del tema incluso después de cerrar la aplicación. Se empieza obteniendo una referencia al archivo de preferencias, desde donde se consulta un valor booleano que indica si el modo nocturno está activado o no. En función de ese valor, antes de crear la interfaz de usuario, se configura el tema global de la aplicación utilizando la clase AppCompatDelegate, la cual permite aplicar el modo claro o el modo oscuro de forma consistente en todas las actividades.
+
+Después de establecer el tema, se infla el layout principal y se utiliza el botón responsable de cambiar el tema. Este botón cambia su ícono dependiendo del modo actual: si la aplicación se encuentra en modo oscuro, se muestra un ícono de sol que indica la posibilidad de volver al modo claro, mientras que si el tema activo es el claro, se muestra un ícono de luna que representa la opción de activar el modo oscuro.
+
+Cuando el usuario presiona el botón, se vuelve a consultar el estado almacenado en las preferencias para determinar qué acción ejecutar. Si el modo oscuro está habilitado, la aplicación cambia a modo claro mediante la función de AppCompatDelegate y actualiza el ícono para reflejar el nuevo estado. En caso contrario, se activa el modo oscuro, se cambia el ícono nuevamente y se modifica el valor guardado en SharedPreferences para que el cambio persista. Finalmente, el editor de preferencias aplica los cambios, asegurando que la próxima vez que se abra la aplicación, esta recuerde el último tema seleccionado y lo aplique automáticamente antes de cargar la interfaz. </p>
+
+---
 ## Ejemplo de Uso
 <table>
   <tr>
@@ -86,7 +135,12 @@
 ---
 
 ## Presentación de la aplicación 
+
+-Aplicación inicial
 https://github.com/user-attachments/assets/77734344-893d-4594-b24c-dd554714be43
+-Aplicación usando Themes
+https://github.com/user-attachments/assets/397df654-3046-4811-aed0-a5de56668449
+
 
 
 ---
