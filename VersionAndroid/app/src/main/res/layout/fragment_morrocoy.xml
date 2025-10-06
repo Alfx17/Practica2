@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".morrocoyFragment"
-    android:background="#8BB7C8">
+    android:background="@color/FondoMorrocoy">
 
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Morrocoy!"
         android:textStyle="bold"
-        android:background="#5D8039"
-        android:textColor="#FFFFFF"
+        android:background="@color/botonFondoMorrocoy"
+        android:textColor="@color/letrasMorrocoy"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
+        android:textColor="@color/letrasMorrocoy"
         android:text="El Parque Nacional Morrocoy, ubicado en el estado Falcón, Venezuela, es una reserva marina y de manglares costeros conocida por su archipiélago de cayos y playas de arena blanca, como el Cayo Sombrero, aguas cristalinas y arrecifes de coral. Fue declarado parque nacional en 1974 para proteger su ecosistema, que incluye diversas aves, corales, tortugas y manglares, y es un destino turístico popular por sus aguas y arrecifes."
         app:layout_constraintTop_toBottomOf="@id/tituloMorrocoy"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ReseñaMorrocoy"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="140dp" />
 
@@ -50,11 +51,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa de Venezuela"
-        android:backgroundTint="#5D8039"
-        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/botonFondoMorrocoy"
+        android:textColor="@color/letrasMorrocoy"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/videoMorrocoy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

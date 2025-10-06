@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".VallartaFragment"
-    android:background="#8BB7C8">
+    android:background="@color/FondoVallarta">
 
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Puerto Vallarta!"
         android:textStyle="bold"
-        android:background="#070707"
-        android:textColor="#8BB7C8"
+        android:background="@color/botonFondoVallarta"
+        android:textColor="@color/letrasVallarta"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +38,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ReseñaVallarta"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="140dp" />
 
@@ -50,11 +50,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa de México"
-        android:backgroundTint="#070707"
-        android:textColor="#8BB7C8"
+        android:backgroundTint="@color/botonFondoVallarta"
+        android:textColor="@color/letrasVallarta"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/videoVallarta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

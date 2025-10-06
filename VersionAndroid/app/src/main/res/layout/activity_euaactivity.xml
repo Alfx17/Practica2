@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0A3161"
     tools:context=".EUAActivity">
 
     <TextView
@@ -15,8 +14,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Estados Unidos!"
         android:textStyle="bold"
-        android:background="#FFFFFF"
-        android:textColor="#B31942"
+        android:background="@color/botonFondoEUA"
+        android:textColor="@color/letrasEUA"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,11 +87,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa principal"
-        android:backgroundTint="#FFFFFF"
-        android:textColor="#B31942"
+        android:backgroundTint="@color/botonFondoEUA"
+        android:textColor="@color/letrasEUA"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/black"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

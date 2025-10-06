@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#006341"
     tools:context=".MexicoActivity">
 
     <TextView
@@ -15,8 +14,8 @@
         android:text="¡Bienvenido a México!"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:background="#FFFFFF"
-        android:textColor="#C8102E"
+        android:background="@color/botonFondoMexico"
+        android:textColor="@color/letrasMexico"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,11 +103,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa principal"
-        android:backgroundTint="#FFFFFF"
-        android:textColor="#C8102E"
+        android:backgroundTint="@color/botonFondoMexico"
+        android:textColor="@color/letrasMexico"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/black"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

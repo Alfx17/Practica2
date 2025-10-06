@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8102E"
     tools:context=".ColombiaActivity">
 
     <TextView
@@ -15,8 +14,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Colombia!"
         android:textStyle="bold"
-        android:background="#003087"
-        android:textColor="#FFCD00"
+        android:background="@color/botonFondoColombia"
+        android:textColor="@color/letrasColombia"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,8 +86,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa principal"
-        android:backgroundTint="#003087"
-        android:textColor="#FFCD00"
+        android:backgroundTint="@color/botonFondoColombia"
+        android:textColor="@color/letrasColombia"
         app:cornerRadius="12dp"
         android:elevation="8dp"
         app:rippleColor="@android:color/white"

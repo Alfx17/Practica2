@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".cristoFragment"
-    android:background="#FFFFFF">
+    android:background="@color/FondoCristo">
 
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:text="¡Conoce El Cristo Redentor!"
         android:textStyle="bold"
-        android:background="#ABABAB"
-        android:textColor="#000000"
+        android:background="@color/botonFondoCristo"
+        android:textColor="@color/letrasCristo"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +38,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ReseñaCristo"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="140dp" />
 
@@ -50,11 +50,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa de Brasil"
-        android:backgroundTint="#ABABAB"
-        android:textColor="#000000"
+        android:backgroundTint="@color/botonFondoCristo"
+        android:textColor="@color/letrasCristo"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/videoCristo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
