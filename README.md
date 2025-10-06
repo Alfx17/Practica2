@@ -28,7 +28,8 @@
 ---
 
 ## Objetivo
-<p align="justify">El propósito de esta tarea es que ustedes desarrollen una aplicación Android que demuestre una navegación de usuario inmersiva y temática, y que integre elementos de interfaz creativos.</p>
+<p align="justify">El objetivo de esta práctica es implementar la persistencia de datos a través de SharedPreferences para guardar las preferencias del usuario. Específicamente, añadirán una funcionalidad que permita al usuario seleccionar y aplicar un tema visual (claro u oscuro) a la aplicación, asegurando que esta elección se mantenga entre diferentes sesiones de uso.
+</p>
 
 ---
 
