@@ -173,3 +173,5 @@ git clone https://github.com/Alfx17/Aventura_Interactiva.git]
 ---
 
 ## Desarrollador
+
+- Flores Morales Aldahir Andrés
