@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009739"
     tools:context=".BrasilActivity">
 
     <TextView
@@ -15,8 +14,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Brasil!"
         android:textStyle="bold"
-        android:background="#FEDD00"
-        android:textColor="#012169"
+        android:background="@color/botonFondoBrasil"
+        android:textColor="@color/letrasBrasil"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,8 +72,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa principal"
-        android:backgroundTint="#FEDD00"
-        android:textColor="#012169"
+        android:backgroundTint="@color/botonFondoBrasil"
+        android:textColor="@color/letrasBrasil"
         app:cornerRadius="12dp"
         android:elevation="8dp"
         app:rippleColor="@android:color/white"

@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="mainFondo">#C2FAF1</color>
+    <color name="mainTitulo">#4CCA54</color>
+    <color name="mainTituloLetras">#000000</color>
+
+    <color name="FondoAlaska">#FFB612</color>
+    <color name="letrasAlaska">#FFB612</color>
+    <color name="botonFondoAlaska">#0F204B</color>
+
+    <color name="FondoGroenlandia">#D00C33</color>
+    <color name="letrasGroenlandia">#D00C33</color>
+    <color name="botonFondoGroenlandia">#FFFFFF</color>
+
+    <color name="FondoCanada">#FFFFFF</color>
+    <color name="letrasCanada">#FFFFFF</color>
+    <color name="botonFondoCanada">#D80621</color>
+
+    <color name="FondoEUA">#0A3161</color>
+    <color name="letrasEUA">#B31942</color>
+    <color name="botonFondoEUA">#FFFFFF</color>
+
+    <color name="FondoMexico">#006341</color>
+    <color name="letrasMexico">#C8102E</color>
+    <color name="botonFondoMexico">#FFFFFF</color>
+
+    <color name="FondoVenezuela">#EF3340</color>
+    <color name="letrasVenezuela">#FCE300</color>
+    <color name="botonFondoVenezuela">#003DA5</color>
+
+    <color name="FondoColombia">#C8102E</color>
+    <color name="letrasColombia">#FFCD00</color>
+    <color name="botonFondoColombia">#003087</color>
+
+    <color name="FondoPeru">#FFFFFF</color>
+    <color name="letrasPeru">#FFFFFF</color>
+    <color name="botonFondoPeru">#C8102E</color>
+
+    <color name="FondoBrasil">#009739</color>
+    <color name="letrasBrasil">#012169</color>
+    <color name="botonFondoBrasil">#FEDD00</color>
+
+    <color name="FondoArgentina">#6CACE4</color>
+    <color name="letrasArgentina">#7D4016</color>
+    <color name="botonFondoArgentina">#FFFFFF</color>
+
+    <color name="FondoCartagena">#C76717</color>
+    <color name="letrasCartagena">#FFFFFF</color>
+    <color name="botonFondoCartagena">#5D8039</color>
+
+    <color name="FondoCataratas">#F8E5B2</color>
+    <color name="letrasCataratas">#F8E5B2</color>
+    <color name="botonFondoCataratas">#6892A0</color>
+
+    <color name="FondoCristo">#FFFFFF</color>
+    <color name="letrasCristo">#000000</color>
+    <color name="botonFondoCristo">#ABABAB</color>
+
+    <color name="FondoIlulissat">#8BB7C8</color>
+    <color name="letrasIlulissat">#8BB7C8</color>
+    <color name="botonFondoIlulissat">#070707</color>
+
+    <color name="FondoLibertad">#A1C7B6</color>
+    <color name="letrasLibertad">#000000</color>
+    <color name="botonFondoLibertad">#AD8A1F</color>
+
+    <color name="FondoMachu">#7C4518</color>
+    <color name="letrasMachu">#FFFFFF</color>
+    <color name="botonFondoMachu">#5D8039</color>
+
+    <color name="FondoMendenhall">#8BB7C8</color>
+    <color name="letrasMendenhall">#8BB7C8</color>
+    <color name="botonFondoMendenhall">#070707</color>
+
+    <color name="FondoMorrocoy">#8BB7C8</color>
+    <color name="letrasMorrocoy">#FFFFFF</color>
+    <color name="botonFondoMorrocoy">#5D8039</color>
+
+    <color name="FondoNiagara">#8BB7C8</color>
+    <color name="letrasNiagara">#8BB7C8</color>
+    <color name="botonFondoNiagara">#070707</color>
+
+    <color name="FondoSilla">#D5D0B7</color>
+    <color name="letrasSilla">#FFFFFF</color>
+    <color name="botonFondoSilla">#351508</color>
+
+    <color name="FondoTeotihuacan">#D5D0B7</color>
+    <color name="letrasTeotihuacan">#FFFFFF</color>
+    <color name="botonFondoTeotihuacan">#62280E</color>
+
+    <color name="FondoVallarta">#8BB7C8</color>
+    <color name="letrasVallarta">#8BB7C8</color>
+    <color name="botonFondoVallarta">#070707</color>
+
+    <color name="FondoToronto">#D5D0B7</color>
+    <color name="letrasToronto">#FFFFFF</color>
+    <color name="botonFondoToronto">#62280E</color>
+
+    <color name="FondoVegas">#91AFAA</color>
+    <color name="letrasVegas">#000000</color>
+    <color name="botonFondoVegas">#FFFFFF</color>
 </resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainTitulo">#000000</color>
+    <color name="mainTituloLetras">#FFFFFF</color>
+
+    <color name="letrasAlaska">#0F204B</color>
+    <color name="botonFondoAlaska">#FFB612</color>
+
+    <color name="letrasGroenlandia">#FFFFFF</color>
+    <color name="botonFondoGroenlandia">#D00C33</color>
+
+    <color name="letrasCanada">#D80621</color>
+    <color name="botonFondoCanada">#FFFFFF</color>
+
+    <color name="letrasEUA">#FFFFFF</color>
+    <color name="botonFondoEUA">#0A3161</color>
+
+    <color name="letrasMexico">#FFFFFF</color>
+    <color name="botonFondoMexico">#006341</color>
+
+    <color name="letrasVenezuela">#003DA5</color>
+    <color name="botonFondoVenezuela">#FCE300</color>
+
+    <color name="letrasColombia">#003087</color>
+    <color name="botonFondoColombia">#FFCD00</color>
+
+    <color name="letrasPeru">#C8102E</color>
+    <color name="botonFondoPeru">#FFFFFF</color>
+
+    <color name="letrasBrasil">#FEDD00</color>
+    <color name="botonFondoBrasil">#009739</color>
+
+    <color name="letrasArgentina">#7D4016</color>
+    <color name="botonFondoArgentina">#6CACE4</color>
+
+    <color name="letrasCartagena">#5D8039</color>
+    <color name="botonFondoCartagena">#FFFFFF</color>
+
+    <color name="letrasCataratas">#6892A0</color>
+    <color name="botonFondoCataratas">#F8E5B2</color>
+
+    <color name="FondoCristo">#FFFFFF</color>
+    <color name="letrasCristo">#ABABAB</color>
+    <color name="botonFondoCristo">#000000</color>
+
+    <color name="letrasIlulissat">#070707</color>
+    <color name="botonFondoIlulissat">#8BB7C8</color>
+
+    <color name="FondoLibertad">#A1C7B6</color>
+    <color name="letrasLibertad">#AD8A1F</color>
+    <color name="botonFondoLibertad">#000000</color>
+
+    <color name="FondoMachu">#5D8039</color>
+    <color name="letrasMachu">#FFFFFF</color>
+    <color name="botonFondoMachu">#7C4518</color>
+
+    <color name="letrasMendenhall">#070707</color>
+    <color name="botonFondoMendenhall">#8BB7C8</color>
+
+    <color name="FondoMorrocoy">#5D8039</color>
+    <color name="letrasMorrocoy">#FFFFFF</color>
+    <color name="botonFondoMorrocoy">#8BB7C8</color>
+
+    <color name="letrasNiagara">#070707</color>
+    <color name="botonFondoNiagara">#8BB7C8</color>
+
+    <color name="FondoSilla">#D5D0B7</color>
+    <color name="letrasSilla">#351508</color>
+    <color name="botonFondoSilla">#FFFFFF</color>
+
+    <color name="FondoTeotihuacan">#D5D0B7</color>
+    <color name="letrasTeotihuacan">#62280E</color>
+    <color name="botonFondoTeotihuacan">#FFFFFF</color>
+
+    <color name="letrasVallarta">#070707</color>
+    <color name="botonFondoVallarta">#8BB7C8</color>
+
+    <color name="FondoToronto">#D5D0B7</color>
+    <color name="letrasToronto">#62280E</color>
+    <color name="botonFondoToronto">#FFFFFF</color>
+
+</resources>

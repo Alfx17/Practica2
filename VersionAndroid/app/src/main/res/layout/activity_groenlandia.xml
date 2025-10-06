@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D00C33"
     tools:context=".GroenlandiaActivity">
 
     <TextView
@@ -15,8 +14,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Groenlandia!"
         android:textStyle="bold"
-        android:background="#FFFFFF"
-        android:textColor="#D00C33"
+        android:background="@color/botonFondoGroenlandia"
+        android:textColor="@color/letrasGroenlandia"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,11 +72,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa principal"
-        android:backgroundTint="#FFFFFF"
-        android:textColor="#D00C33"
+        android:backgroundTint="@color/botonFondoGroenlandia"
+        android:textColor="@color/letrasGroenlandia"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".machuFragment"
-    android:background="#7C4518">
+    android:background="@color/FondoMachu">
 
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Machu Picchu!"
         android:textStyle="bold"
-        android:background="#5D8039"
-        android:textColor="#FFFFFF"
+        android:background="@color/botonFondoMachu"
+        android:textColor="@color/letrasMachu"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
 
     <TextView
         android:id="@+id/ReseñaMachu"
-        android:textColor="@color/white"
+        android:textColor="@color/letrasMachu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -39,8 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ReseñaMachu"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="140dp" />
 
@@ -51,11 +51,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa de Perú"
-        android:backgroundTint="#5D8039"
-        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/botonFondoMachu"
+        android:textColor="@color/letrasMachu"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/videoMachu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

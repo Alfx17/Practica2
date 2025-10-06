@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".cartagenaFragment"
-    android:background="#C76717">
+    android:background="@color/FondoCartagena">
 
 
     <TextView
@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Cartagena de Indias!"
         android:textStyle="bold"
-        android:background="#5D8039"
-        android:textColor="#FFFFFF"
+        android:background="@color/botonFondoCartagena"
+        android:textColor="@color/letrasCartagena"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +26,7 @@
         android:id="@+id/ReseñaCartagena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/letrasCartagena"
         android:gravity="center"
         android:padding="16dp"
         android:text="Cartagena de Indias es la capital de Bolívar y un importante centro turístico de Colombia, conocida por su Ciudad Amurallada, declarada Patrimonio de la Humanidad por la UNESCO, y por su rica historia, arquitectura colonial y playas del Caribe. Fundada en el siglo XVI, fue un puerto crucial durante el Virreinato español y cuenta con monumentos como el Castillo de San Felipe de Barajas, la Torre del Reloj y el Palacio de la Inquisición, además de su contraste con la moderna zona de Bocagrande."
@@ -38,8 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ReseñaCartagena"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="140dp" />
 
@@ -50,11 +51,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa de Colombia"
-        android:backgroundTint="#5D8039"
-        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/botonFondoCartagena"
+        android:textColor="@color/letrasCartagena"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@+id/videoCartagena"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

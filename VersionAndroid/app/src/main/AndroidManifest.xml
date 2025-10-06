@@ -11,42 +11,53 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AventuraInteractiva">
+        android:theme="@style/Base.Theme.AventuraInteractiva.MainActivity">
         <activity
             android:name=".LugaresActivity"
             android:exported="false" />
         <activity
             android:name=".ArgentinaActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.ArgentinaActivity"
             android:exported="false" />
         <activity
             android:name=".BrasilActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.BrasilActivity"
             android:exported="false" />
         <activity
             android:name=".PeruActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.PeruActivity"
             android:exported="false" />
         <activity
             android:name=".ColombiaActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.ColombiaActivity"
             android:exported="false" />
         <activity
             android:name=".VenezuelaActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.VenezuelaActivity"
             android:exported="false" />
         <activity
             android:name=".MexicoActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.MexicoActivity"
             android:exported="false" />
         <activity
             android:name=".EUAActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.EUAActivity"
             android:exported="false" />
         <activity
             android:name=".CanadaActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.CanadaActivity"
             android:exported="false" />
         <activity
             android:name=".GroenlandiaActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.GroenlandiaActivity"
             android:exported="false" />
         <activity
             android:name=".AlaskaActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.AlaskaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Base.Theme.AventuraInteractiva.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

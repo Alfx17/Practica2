@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EF3340"
     tools:context=".VenezuelaActivity">
 
     <TextView
@@ -15,8 +14,8 @@
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a Venezuela!"
         android:textStyle="bold"
-        android:background="#003DA5"
-        android:textColor="#FCE300"
+        android:background="@color/botonFondoVenezuela"
+        android:textColor="@color/letrasVenezuela"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,11 +70,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Regresar al mapa principal"
-        android:backgroundTint="#003DA5"
-        android:textColor="#FCE300"
+        android:backgroundTint="@color/botonFondoVenezuela"
+        android:textColor="@color/letrasVenezuela"
         app:cornerRadius="12dp"
         android:elevation="8dp"
-        app:rippleColor="@android:color/black"
+        app:rippleColor="@android:color/darker_gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -1,9 +1,81 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AventuraInteractiva" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.AventuraInteractiva.MainActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:windowBackground">@color/mainFondo</item>
+        <item name="colorPrimary">@color/mainTitulo</item>
+        <item name="colorPrimaryVariant">@color/mainTituloLetras</item>
     </style>
 
-    <style name="Theme.AventuraInteractiva" parent="Base.Theme.AventuraInteractiva" />
+    <style name="Base.Theme.AventuraInteractiva.AlaskaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:windowBackground">@color/FondoAlaska</item>
+        <item name="colorPrimary">@color/botonFondoAlaska</item>
+        <item name="colorPrimaryVariant">@color/letrasAlaska</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.GroenlandiaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:windowBackground">@color/FondoGroenlandia</item>
+        <item name="colorPrimary">@color/botonFondoGroenlandia</item>
+        <item name="colorPrimaryVariant">@color/letrasGroenlandia</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.CanadaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoCanada</item>
+        <item name="colorPrimary">@color/botonFondoCanada</item>
+        <item name="colorPrimaryVariant">@color/letrasCanada</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.EUAActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoEUA</item>
+        <item name="colorPrimary">@color/botonFondoEUA</item>
+        <item name="colorPrimaryVariant">@color/letrasEUA</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.MexicoActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoMexico</item>
+        <item name="colorPrimary">@color/botonFondoMexico</item>
+        <item name="colorPrimaryVariant">@color/letrasMexico</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.VenezuelaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoVenezuela</item>
+        <item name="colorPrimary">@color/botonFondoVenezuela</item>
+        <item name="colorPrimaryVariant">@color/letrasVenezuela</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.ColombiaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoColombia</item>
+        <item name="colorPrimary">@color/botonFondoColombia</item>
+        <item name="colorPrimaryVariant">@color/letrasColombia</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.PeruActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoPeru</item>
+        <item name="colorPrimary">@color/botonFondoPeru</item>
+        <item name="colorPrimaryVariant">@color/letrasPeru</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.BrasilActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoBrasil</item>
+        <item name="colorPrimary">@color/botonFondoBrasil</item>
+        <item name="colorPrimaryVariant">@color/letrasBrasil</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.ArgentinaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Colores del main-->
+        <item name="android:colorBackground">@color/FondoArgentina</item>
+        <item name="colorPrimary">@color/botonFondoArgentina</item>
+        <item name="colorPrimaryVariant">@color/letrasArgentina</item>
+    </style>
+
+
 </resources>

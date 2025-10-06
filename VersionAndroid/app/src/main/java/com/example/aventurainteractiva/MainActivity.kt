@@ -8,12 +8,56 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
+import android.content.SharedPreferences
+import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
+
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var prefs: SharedPreferences
+    private lateinit var buttonThemes : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        prefs = getSharedPreferences("settings", MODE_PRIVATE)
+        val nightMode = prefs.getBoolean("night_mode", false)
+        if(nightMode){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        //Botón para cambio de tema
+        val buttonThemes = findViewById<ImageButton>(R.id.buttonThemes)
+
+        if(nightMode){
+            buttonThemes.setImageResource(R.drawable.wb_sunny_24)
+        }else{
+            buttonThemes.setImageResource(R.drawable.dark_mode_24)
+        }
+
+        buttonThemes.setOnClickListener {
+            val nightModeEnable = prefs.getBoolean("night_mode", false)
+            val editor = prefs.edit()
+
+            if(nightModeEnable){
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                buttonThemes.setImageResource(R.drawable.wb_sunny_24)
+                editor.putBoolean("night_mode", false)
+            }else{
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                buttonThemes.setImageResource(R.drawable.dark_mode_24)
+                editor.putBoolean("night_mode", true)
+            }
+
+            editor.apply()
+
+        }
+
         //Botón para Alaska
         val alaskaB = findViewById<Button>(R.id.Alaska)
         alaskaB.setOnClickListener {

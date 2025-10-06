@@ -1,7 +1,81 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AventuraInteractiva" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.AventuraInteractiva.MainActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/mainTitulo</item>
+        <item name="colorPrimaryVariant">@color/mainTituloLetras</item>
     </style>
+
+    <style name="Base.Theme.AventuraInteractiva.AlaskaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasAlaska</item>
+        <item name="colorPrimaryVariant">@color/FondoAlaska</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.GroenlandiaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasGroenlandia</item>
+        <item name="colorPrimaryVariant">@color/FondoGroenlandia</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.CanadaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasCanada</item>
+        <item name="colorPrimaryVariant">@color/FondoCanada</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.EUAActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasEUA</item>
+        <item name="colorPrimaryVariant">@color/FondoEUA</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.MexicoActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasMexico</item>
+        <item name="colorPrimaryVariant">@color/FondoMexico</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.VenezuelaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasVenezuela</item>
+        <item name="colorPrimaryVariant">@color/FondoVenezuela</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.ColombiaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasColombia</item>
+        <item name="colorPrimaryVariant">@color/FondoColombia</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.PeruActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasPeru</item>
+        <item name="colorPrimaryVariant">@color/FondoPeru</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.BrasilActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasBrasil</item>
+        <item name="colorPrimaryVariant">@color/FondoBrasil</item>
+    </style>
+
+    <style name="Base.Theme.AventuraInteractiva.ArgentinaActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Fondo de noche para todos los activities-->
+        <item name="android:windowBackground">@drawable/noche</item>
+        <item name="colorPrimary">@color/letrasArgentina</item>
+        <item name="colorPrimaryVariant">@color/FondoArgentina</item>
+    </style>
+
+
 </resources>
